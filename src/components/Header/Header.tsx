@@ -1,13 +1,13 @@
 import React, { FC } from "react";
 import styles from "./Header.module.css";
-import logo from "../../assets/img/logo-white.png";
+import Logo from "./Logo";
+import Heading from "./Heading";
 
 const Header: FC = () => (
   <>
     <header className={styles.header}>
-      <div className={styles.logoBox}>
-        <img src={logo} alt="Logo" className={styles.logo} />
-      </div>
+      <Logo />
+      <Heading />
     </header>
   </>
 );
