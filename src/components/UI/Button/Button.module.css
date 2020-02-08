@@ -6,6 +6,7 @@
   display: inline-block;
   border-radius: 100px;
   transition: all 0.2s;
+  position: relative;
 }
 
 .root:hover {
@@ -18,7 +19,29 @@
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
+.root::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.root:hover::after {
+  transform: scaleX(1.5) scaleY(1.6);
+  opacity: 0;
+}
+
 .white {
   background-color: #fff;
   color: #777;
+}
+
+.white::after {
+  background-color: #fff;
 }
