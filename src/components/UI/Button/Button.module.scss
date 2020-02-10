@@ -1,3 +1,5 @@
+@import "../../../scss/variables.scss";
+
 .root:link,
 .root:visited {
   text-transform: uppercase;
@@ -39,10 +41,10 @@
 }
 
 .white {
-  background-color: #fff;
-  color: #777;
+  background-color: $color-white;
+  color: $color-grey-dark;
 }
 
 .white::after {
-  background-color: #fff;
+  background-color: $color-white;
 }

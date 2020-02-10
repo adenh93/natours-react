@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import styles from "./Heading.module.css";
+import styles from "./Heading.module.scss";
 import Button from "../../UI/Button";
 
 const Heading: FC = () => (

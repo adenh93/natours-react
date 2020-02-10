@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import styles from "./Header.module.css";
+import styles from "./Header.module.scss";
 import Logo from "./Logo";
 import Heading from "./Heading";
 
