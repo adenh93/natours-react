@@ -1,0 +1,12 @@
+@import "../../../scss/main.scss";
+
+.row {
+  max-width: $grid-width;
+  margin: 0 auto;
+
+  &:not(:last-child) {
+    margin-bottom: $grid-vertical-gutter;
+  }
+
+  @include clearfix;
+}

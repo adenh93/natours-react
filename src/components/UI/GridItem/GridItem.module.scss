@@ -1,0 +1,44 @@
+@import "../../../scss/main.scss";
+
+.col {
+  float: left;
+
+  &:not(:last-child) {
+    margin-right: $grid-horizontal-gutter;
+  }
+}
+
+.col1of1 {
+  width: 100%;
+}
+
+.col1of2 {
+  width: calc((100% - #{$grid-horizontal-gutter}) / 2);
+}
+
+.col1of3 {
+  width: calc((100% - #{$grid-horizontal-gutter} * 2) / 3);
+}
+
+.col2of3 {
+  width: calc(
+    ((100% - #{$grid-horizontal-gutter} * 2) / 3) * 2 + #{$grid-horizontal-gutter}
+  );
+}
+
+.col1of4 {
+  width: calc((100% - (#{$grid-horizontal-gutter} * 3)) / 4);
+}
+
+.col2of4 {
+  width: calc(
+    ((100% - #{$grid-horizontal-gutter} * 3) / 4) * 2 + #{$grid-horizontal-gutter}
+  );
+}
+
+.col3of4 {
+  width: calc(
+    ((100% - #{$grid-horizontal-gutter} * 3) / 4) * 3 +
+      (#{$grid-horizontal-gutter} * 2)
+  );
+}
